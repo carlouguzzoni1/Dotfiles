@@ -1,0 +1,56 @@
+# Show aliases.
+alias aliases='cat ~/.bashrc.d/aliases && printf "\n"'
+alias functions='cat ~/.bashrc.d/functions && printf "\n"'
+
+# Reload bashrc.
+alias reload='source ~/.bashrc'
+
+# Find files.
+alias f='find . -name'
+
+# Navigation.
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias home='cd ~'
+
+# Clear terminal.
+alias clc='clear'
+
+# Paste the content of the clipboard.
+alias showclip='wl-paste'
+
+# Listing.
+alias ll='ls -lah'
+
+# Git aliases.
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline --graph --decorate'
+alias gd='git diff'
+alias gb='git branch'
+alias gco='git checkout'
+
+# Process management.
+alias psa='ps afux'
+alias psg='ps aux | grep -i'
+
+# Safer file opperations. Ask when there are conflicts.
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# Disk usage.
+alias dfh='df -h'
+alias duh='du -sh'
+
+# Networking (base).
+alias ports='ss -tulnp'
+alias myip='curl -4 -s ifconfig.me'
+
+# Package management.
+alias update='sudo dnf update && sudo dnf upgrade'
+alias install='sudo dnf install'
